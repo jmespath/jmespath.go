@@ -575,7 +575,7 @@ func jpfMaxBy(arguments []interface{}) (interface{}, error) {
 		}
 		return bestItem, nil
 	default:
-		return nil, errors.New("invalid type, must be number of string")
+		return nil, errors.New("invalid type, must be a number or string")
 	}
 }
 func jpfSum(arguments []interface{}) (interface{}, error) {
@@ -670,7 +670,7 @@ func jpfMinBy(arguments []interface{}) (interface{}, error) {
 		}
 		return bestItem, nil
 	} else {
-		return nil, errors.New("invalid type, must be number of string")
+		return nil, errors.New("invalid type, must be a number or string")
 	}
 }
 func jpfType(arguments []interface{}) (interface{}, error) {
@@ -760,7 +760,7 @@ func jpfSortBy(arguments []interface{}) (interface{}, error) {
 		}
 		return arr, nil
 	} else {
-		return nil, errors.New("invalid type, must be number of string")
+		return nil, errors.New("invalid type, must be a number or string")
 	}
 }
 func jpfJoin(arguments []interface{}) (interface{}, error) {
